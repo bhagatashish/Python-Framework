@@ -13,7 +13,7 @@ class baseclass:
         filename = logging.FileHandler('logfile.log')  # create or update file name
         filename.setFormatter(fileFormat)  # make connection between file name and format file
         logger.addHandler(filename)  # linking filename , to make connection between logs and file name path
-        logger.setLevel('DEBUG')
+
         logger.debug("debug logs")
         logger.critical('critical')
         logger.info('info logs')
